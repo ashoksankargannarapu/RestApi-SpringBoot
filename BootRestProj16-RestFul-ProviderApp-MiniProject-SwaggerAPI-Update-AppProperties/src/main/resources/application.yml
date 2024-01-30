@@ -1,0 +1,32 @@
+touristapi:
+    messages:
+      touristSaveSucc: Tourist is registered having id value
+      touristSaveFail: Problem in tourist enrollment
+      fetchAllTouristsFail: Problem to getting all Tourists
+      fetchTouristIdFail: tourist is not found
+      upadateTouristSucc: Tourist is updated
+      upadateTouristFail: Tourist is not updated 
+      updateTouristBudgetSucc: Tourist budget is hiked...and the new budget is
+      updateTouristBudgetFail: Tourist is not found
+      touristDeleteSucc: tid Tourist found and deleted
+      touristDeleteFail: tid  Tourist is not found for deletion
+      touristBudgetDeleteSucc: no.of Tourists are found and deleted
+      touristBudgetDeleteFail: Tourist not found for deletion
+      
+      
+
+server:
+  port: 4041
+  servlet:
+    context-path: /RestMiniProject
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: AshokSankar
+    url: jdbc:oracle:thin:@localhost:1521:ORCL
+    username: system
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
