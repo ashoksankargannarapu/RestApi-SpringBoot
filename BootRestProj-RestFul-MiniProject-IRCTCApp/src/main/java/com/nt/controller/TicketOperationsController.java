@@ -27,7 +27,7 @@ public class TicketOperationsController {
 				produces="application/json"
 	)
 	public ResponseEntity<Ticket> bookTicket(@RequestBody Passenger passenger){
-		
+		System.out.println("TicketOperationsController.bookTicket()");
 		Ticket ticket = service.bookTicket(passenger);
 		
 		return new ResponseEntity<>(ticket, HttpStatus.CREATED);
