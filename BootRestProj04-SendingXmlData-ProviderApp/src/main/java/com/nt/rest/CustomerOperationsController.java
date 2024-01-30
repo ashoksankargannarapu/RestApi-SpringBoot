@@ -26,6 +26,7 @@ public class CustomerOperationsController {
 	
 	@GetMapping("/cust_report")
 	public Customer showDataCustomer() {
+		System.out.println("CustomerOperationsController.showDataCustomer()");
 		Customer cust=new Customer(101,"raja", "hyd", 54543.98f);
 		return cust;
 	}
